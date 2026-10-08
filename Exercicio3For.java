@@ -1,0 +1,22 @@
+package Aula7;
+import java.util.Scanner;
+
+public class Exercicio3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite um número:");
+        int numero = scanner.nextInt();
+        
+        System.out.print("Sequência: ");
+        for (int i = 1; i <= numero; i++) {
+            if (i < numero) {
+                System.out.print(i + " ");
+            } else {
+                System.out.print(i + ".");
+            }
+        }
+        
+        scanner.close();
+    }
+}
